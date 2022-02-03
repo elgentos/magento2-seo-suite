@@ -1,0 +1,40 @@
+{
+    "name": "elgentos/magento2-seo-suite",
+    "description": "A bundle of SEO packages to install in a Magento 2 installation",
+    "type": "metapackage",
+    "require": {
+        "elgentos/magento2-structured-data": "^1.2",
+        "elgentos/magento2-alternate-urls": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "elgentos ecommerce",
+            "email": "info@elgentos.nl"
+        }
+    ],
+    "repositories": {
+        "magento": {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "mediact/testing-suite": "^2.9"
+    },
+    "archive": {
+        "exclude": [
+            "/.gitignore",
+            "/grumphp.yml",
+            "/pdepend.xml",
+            "/phpstan.neon",
+            "/phpunit.xml",
+            "/phpcs.xml",
+            "/phpmd.xml"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
